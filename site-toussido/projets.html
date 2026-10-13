@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr" id="top">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projets | Toussido Simo Jores Cabrel</title>
+<meta name="description" content="Projets de Toussido Simo Jores Cabrel : volet roulant automatisé, liaison RS232 PIC24 vers automate, minuteur de cuisson sur FPGA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html">Toussido Simo</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <ul class="nav" id="menu">
+      <li><a href="infos.html" title="Informations personnelles">Infos perso</a></li>
+      <li><a href="formations.html" title="Formations">Formations</a></li>
+      <li><a href="experiences.html" title="Expériences professionnelles">Expériences</a></li>
+      <li><a href="projets.html" aria-current="page" title="Projets">Projets</a></li>
+      <li><a href="langues.html" title="Compétences linguistiques">Langues</a></li>
+      <li><a href="informatique.html" title="Compétences informatiques">Informatique</a></li>
+      <li><a href="competences.html" title="Compétences professionnelles">Compétences pro</a></li>
+      <li><a href="sports.html" title="Sports">Sports</a></li>
+      <li><a href="hobbies.html" title="Hobbies">Hobbies</a></li>
+      <li><a href="vie-associative.html" title="Vie associative">Vie associative</a></li>
+      <li><a href="cv.html" class="cv-link" title="Télécharger mon CV">Mon CV</a></li>
+    </ul>
+  </div>
+  <div class="pe" aria-hidden="true"></div>
+</header>
+<main id="contenu">
+<div class="wrap">
+<div class="page-head">
+<h1>Projets</h1>
+<hr class="rule">
+<p class="lead">Trois projets menés à l'IUT : de la carte électronique à l'automate industriel.</p>
+</div>
+
+  <section class="project" id="volet">
+    <h2>Automatisation d'un volet roulant</h2>
+    <p class="meta">SAÉ 2, semestre 2, 2026</p>
+    <p>Ce projet consiste à automatiser l'ouverture et la fermeture d'un volet roulant métallique avec un automate Siemens S7-1200. Le volet fonctionne selon deux modes : en mode automatique, il réagit à la vitesse du vent mesurée par un anémomètre ; en mode manuel, il se commande avec des boutons poussoirs. Dans les deux cas, les capteurs de fin de course et de présence d'obstacle sont pris en compte.</p>
+
+    <div class="gallery g3 wide">
+      <figure><img class="zoom" src="img/armoire-complete.jpg" alt="Armoire de commande complète du volet roulant"><figcaption>L'armoire de commande câblée.</figcaption></figure>
+      <figure><img class="zoom" src="img/armoire-contacteurs-auto-manu.jpg" alt="Contacteurs KM1, KM2, KM3 et sélecteur AUTO / MANU"><figcaption>Contacteurs KM1 à KM3 et sélecteur AUTO / MANU.</figcaption></figure>
+      <figure><img class="zoom" src="img/volet.jpg" alt="Volet roulant de la maquette"><figcaption>Le volet roulant de la maquette.</figcaption></figure>
+    </div>
+
+    <h3>Les quatre phases</h3>
+    <ol class="phases">
+      <li><div><strong>Câblage du mécanisme.</strong> Armoire avec sectionneur, disjoncteur, différentiel, alimentation 24 V, automate, contacteurs, arrêt d'urgence et boutons de montée et descente.</div></li>
+      <li><div><strong>Chaîne de mesure de la vitesse du vent.</strong> Adaptation de tension, génération d'un signal PWM avec un NE555, comparateur à hystérésis (trigger de Schmitt), simulations sous LTspice et tests sur maquette.</div></li>
+      <li><div><strong>Microcontrôleur.</strong> Programmation de la carte Microchip Explorer 16 (PIC24) pour lire le signal de l'anémomètre.</div></li>
+      <li><div><strong>Automate.</strong> Câblage des entrées et sorties et programmation du Siemens S7-1200 sous TIA Portal pour une commande sécurisée du volet.</div></li>
+    </ol>
+
+    <div class="panel">
+      <h3>Ce que j'ai fait</h3>
+      <ul>
+        <li>Conçu et réalisé le système automatisé de montée et de descente du volet.</li>
+        <li>Mis en œuvre le système de commande des différents mouvements.</li>
+        <li>Programmé le microcontrôleur PIC24 et testé chaque fonction.</li>
+        <li>Diagnostiqué et corrigé les problèmes rencontrés pendant la réalisation.</li>
+      </ul>
+    </div>
+
+    <ul class="tags">
+      <li><span class="tag">Siemens S7-1200</span></li>
+      <li><span class="tag">TIA Portal</span></li>
+      <li><span class="tag">GRAFCET</span></li>
+      <li><span class="tag">PIC24</span></li>
+      <li><span class="tag">LTspice</span></li>
+      <li><span class="tag">KiCad</span></li>
+      <li><span class="tag">NE555</span></li>
+    </ul>
+
+    <div class="gallery g4 tall">
+      <figure><img class="zoom" src="img/armoire-cablage.jpg" alt="Câblage de l'armoire avec équipements de protection"></figure>
+      <figure><img class="zoom" src="img/armoire-q1-q2.jpg" alt="Sectionneur S1, disjoncteur Q1, différentiel Q2 et voyant H1"></figure>
+      <figure><img class="zoom" src="img/armoire-km1-km3.jpg" alt="Gros plan des contacteurs KM1, KM2, KM3"></figure>
+      <figure><img class="zoom" src="img/anemometre-ventilateur.jpg" alt="Anémomètre, ventilateur et afficheur LCD de la maquette"></figure>
+    </div>
+  </section>
+
+  <section class="project" id="rs232">
+    <h2>Transmission de la vitesse du vent par RS232 <span class="status">En cours</span></h2>
+    <p class="meta">SAÉ 3, semestre 3, 2026-2027</p>
+    <p>Ce projet prolonge celui du volet roulant. Un microcontrôleur PIC24FJ128GA010 mesure la vitesse du vent avec un capteur analogique, l'affiche sur un écran LCD, puis l'envoie à l'automate programmable industriel par liaison série RS232 quand celui-ci la demande. L'automate décide ensuite d'ouvrir ou de fermer le volet.</p>
+    <div class="cols">
+      <div class="panel">
+        <h3>Matériel</h3>
+        <ul>
+          <li>Carte Microchip Explorer 16 et carte d'extension d'E/S</li>
+          <li>Microcontrôleur PIC24FJ128GA010</li>
+          <li>Capteur de vitesse du vent, de 0 à 30 m/s</li>
+          <li>Automate Siemens S7-1200</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Ce que je réalise</h3>
+        <ul>
+          <li>Schéma de câblage et prototype opérationnel</li>
+          <li>Projet MPLAB avec programmes commentés</li>
+          <li>Interface sur l'écran LCD avec menu et sous-menu</li>
+          <li>Choix du protocole RS232 et gestion de la demande de l'automate</li>
+        </ul>
+      </div>
+    </div>
+    <p>Je mène ce projet en autonomie, de la programmation du microcontrôleur jusqu'au programme de l'automate.</p>
+    <ul class="tags">
+      <li><span class="tag">MPLAB</span></li>
+      <li><span class="tag">Langage C</span></li>
+      <li><span class="tag">PIC24</span></li>
+      <li><span class="tag">RS232</span></li>
+      <li><span class="tag">Siemens S7-1200</span></li>
+    </ul>
+  </section>
+
+  <section class="project" id="minuteur">
+    <h2>Minuteur de cuisson d'œufs sur FPGA</h2>
+    <p class="meta">SAÉ 1, semestre 1, 2025, en trinôme</p>
+    <p>Le cahier des charges demandait un prototype de minuteur à deux boutons : l'un démarre ou arrête le décompte, l'autre ajoute du temps. Six LED rouges valent 30 secondes chacune, cinq LED vertes valent 15 secondes chacune. Une LED jaune clignote chaque seconde pendant le cycle et un buzzer signale la fin.</p>
+
+    <div class="gallery g3 tall">
+      <figure><img class="zoom" src="img/minuteur-basys-2.jpg" alt="Carte du minuteur reliée à la Basys 3, LED allumées"><figcaption>Prototype en fonctionnement.</figcaption></figure>
+      <figure><img class="zoom" src="img/minuteur-basys-1.jpg" alt="Vue de dessus de la carte du minuteur et de la Basys 3"><figcaption>La carte que nous avons gravée, branchée sur la Basys 3.</figcaption></figure>
+      <figure><img class="zoom" src="img/routage-minuteur.jpg" alt="Toussido montre le typon imprimé devant le routage de la carte sur l'écran"><figcaption>Le typon imprimé et le routage sur l'écran.</figcaption></figure>
+    </div>
+
+    <div class="cols">
+      <div class="panel">
+        <h3>Ma part du projet</h3>
+        <ul>
+          <li>Conception du schéma électronique sous KiCad</li>
+          <li>Routage de la carte</li>
+          <li>Vérification de la continuité des pistes</li>
+        </ul>
+        <p style="margin-top:.8rem;margin-bottom:0">En trinôme : analyse du cahier des charges, choix des composants, vérification de la carte et du prototype, dossier et oral.</p>
+      </div>
+      <div class="panel">
+        <h3>Fonctionnement</h3>
+        <ul>
+          <li>3 minutes présélectionnées au départ</li>
+          <li>Chaque appui sur le second bouton ajoute 15 secondes, jusqu'à 4 min 15 s</li>
+          <li>Les LED s'éteignent une à une, puis tout clignote et le buzzer retentit</li>
+          <li>Un appui sur le premier bouton remet le minuteur à zéro</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Problèmes rencontrés et solutions</h3>
+    <p class="problem"><strong>LED inversées.</strong> Plusieurs LED ne s'allumaient pas. Nous les avons testées avec une alimentation externe, puis replacées dans le bon sens.</p>
+    <p class="problem"><strong>Résistance défectueuse.</strong> Une LED restait éteinte. Après mesure, la résistance était en cause et nous l'avons remplacée.</p>
+    <p class="problem"><strong>Piste de masse coupée.</strong> Un test de continuité piste par piste a montré une mauvaise continuité, que nous avons réparée.</p>
+    <p class="problem"><strong>Erreur dans le schéma KiCad.</strong> L'alimentation des boutons poussoirs était sur le mauvais pin du connecteur JC. Nous l'avons corrigée sur la carte.</p>
+
+    <ul class="tags">
+      <li><span class="tag">VHDL</span></li>
+      <li><span class="tag">Vivado</span></li>
+      <li><span class="tag">Basys 3 (Artix-7)</span></li>
+      <li><span class="tag">KiCad</span></li>
+      <li><span class="tag">Soudure</span></li>
+    </ul>
+    <div class="btn-row">
+      <a class="btn btn-main" href="docs/Dossier_fabrication_SAE1_Minuteur.pdf" download>Télécharger le dossier de fabrication (PDF)</a>
+    </div>
+  </section>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Toussido Simo Jores Cabrel</strong>, BUT GEII, IUT du Littoral Côte d'Opale</p>
+    <p><a href="mailto:toussidosimojorescabrel@gmail.com">toussidosimojorescabrel@gmail.com</a> &nbsp; <a href="tel:+33749171354">07 49 17 13 54</a></p>
+    <p><a href="#top">Haut de page</a></p>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

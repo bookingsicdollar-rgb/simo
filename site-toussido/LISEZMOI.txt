@@ -1,0 +1,20 @@
+SITE PROFESSIONNEL - Toussido Simo Jores Cabrel
+================================================
+
+OUVRIR LE SITE
+Double-clique sur index.html (page d'accueil). Le menu en haut donne accès aux 11 pages.
+
+MODIFIER LE SITE
+- Chaque page est un fichier .html : ouvre-le avec le Bloc-notes, VS Code ou Notepad++.
+- Pour changer un texte, modifie-le entre les balises (<p>...</p>, <li>...</li>).
+- Pour changer une photo, remplace le fichier dans le dossier img/ en gardant le même nom.
+- Pour mettre à jour un CV ou un document, remplace le PDF dans le dossier docs/ en gardant le même nom.
+- Les couleurs se changent au début du fichier css/style.css (variables --yellow, --green, etc.).
+- Pour ajouter une page : copie un fichier existant, renomme-le, puis ajoute une ligne dans le menu de CHAQUE page.
+
+METTRE LE SITE EN LIGNE (gratuit)
+- Netlify Drop (app.netlify.com/drop) : glisse le dossier du site (dézippé), tu obtiens un lien que tu peux renommer.
+- Ou GitHub Pages / e-monsite si tu préfères.
+
+LIENS À VÉRIFIER
+Les liens vers les sites de l'ULCO, d'Elis et de CAMRAIL sont à tester avant mise en ligne.
